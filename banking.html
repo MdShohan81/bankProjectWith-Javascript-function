@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ello Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h2 class="text-5xl text-center mt-5 font-semibold	">Welcome to your
+            <span class="text-fuchsia-500">Account</span> 
+        </h2>
+    </header>
+    <main>
+        <!-- blance section -->
+        <section class="mt-10">
+            <div class="grid grid-cols-3 gap-4 mx-auto w-3/4">
+                <div class="bg-green-400 text-white p-8 rounded-md">
+                    <h3 class="text-3xl text-semibold">Deposit</h3>
+                    <h4  class="text-2xl text-semibold">$<span id="deposit-output">00</span> </h4>
+                </div>
+                <div class="bg-teal-400 text-white p-8">
+                    <h3 class="text-3xl text-semibold">Widthdraw</h3>
+                    <h4  class="text-2xl text-semibold">$<span id="widthdraw-output">00</span> </h4>
+                </div>
+                <div class="bg-blue-400 text-white p-8">
+                    <h3 class="text-3xl text-semibold">Balance</h3>
+                    <h4  class="text-2xl text-semibold">$<span id="main-blance">10</span> </h4>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+        <!-- Deposit and Widthdraw section start  -->
+        <section class="mt-8">
+            <div class="grid grid-cols-2 w-3/4 mx-auto gap-4">
+               <div class="bg-blue-300 p-4">
+                <h3 class="text-3xl text-semibold ml-5 mb-2">Please Deposit</h3>
+                <div>
+                    <input id="deposit-value" class="block w-3/4 p-2  border-2 rounded-md  border-violet-300 border-solid mb-3 ml-5" type="text" placeholder="Enter Amount">
+                    <button id="deposit-btn" onclick="deposit()" class="border-2 border-violet-300  border-solid ml-5 block text-lg px-8 rounded-lg	 py-2 bg-black text-white font-semibp;d">Deposit</button>
+                </div>
+               </div>
+               <div class="bg-green-300 p-4">
+                <h3 class="text-3xl text-semibold ml-5 mb-2">Please Widthdraw</h3>
+                <div>
+                    <input id="widthdraw-value" class="block w-3/4 p-2  border-2 rounded-md  border-violet-300 border-solid mb-3 ml-5" type="text" placeholder="Enter Amount">
+                    <button id="widthdraw-btn" onclick="widthdraw()" class="border-2 border-violet-300  border-solid ml-5 block text-lg px-8 rounded-lg	 py-2 bg-black text-white font-semibp;d">Widthdraw</button>
+                </div>
+               </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
